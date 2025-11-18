@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Image Slider</title>
+
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="slider">
+        <img id="slideImg" alt="Image" src="./images/img1.jpg">
+        <p id="caption"></p>
+        <p id="counter"></p>
+        <p id="message" class="message"></p>
+
+        <div class="controls">
+            <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+            <button id="autoPlayBtn"><i class="fa-solid fa-play"></i> AutoPlay</button>
+            <button id="pauseBtn"><i class="fa-solid fa-pause"></i>Pause</button>
+        </div>
+    </div>
+
+    <div class="add-section">
+        <h3>Add New Image</h3>
+        <input type="text" id="imgUrl" placeholder="Enter image URL">
+        <input type="text" id="captionInput" placeholder="Enter caption">
+        <button id="addBtn">Add Image</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
